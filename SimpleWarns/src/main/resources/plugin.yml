@@ -1,0 +1,4 @@
+name: SimpleWarns
+version: ${project.version}
+main: sexy.criss.simplewars.Main
+authors: [d3ever]

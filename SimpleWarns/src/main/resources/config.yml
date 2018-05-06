@@ -1,0 +1,27 @@
+messages:
+  consoleError: '{"data":"Players command only."}'
+  usage: '{"data": ["&b/warn <player> <message> &7- Выдать предупреждение игроку","&b/unwarn <player> &7- Простить игроку его нелепую ошибку"]}'
+  permError: '{"data":"&cУ вас недостаточно прав, чтобы использовать эту команду."}'
+  bcInfo: '{"data":"&7Игрок &e${OWN}&7 выдал предупреждение игроку &9${TARGET}&7 по причине &a${REASON}&7. &eПредупреждений: &b[${WARNS}/${MAX_WARNS}]"}'
+  yourWarned: '{"data":"&7Вы получили предупреждение по причине &c${REASON}&7. От игрока &a${OWN}&7. &eПредупреждений: &b[${WARNS}/${MAX_WARNS}]"}'
+  youWarnedPlayer: '{"data":"&7Вы выдали предупреждение игроку &c${TARGET}&7 по причине &e${REASON}&7."}'
+  def_reason: '{"data":"&7А я даже не знаю."}'
+  playerIsNotOnline: '{"data":"&cИгрок не в сети."}'
+  warnsMaxed: '{"data":"&4Игрок &e${TARGET}&4 был заблокирован за многочисленные нарушения."}'
+  warnRemoved: '{"data":"&cВы убрали предупреждение у игрока ${TARGET}."}'
+  yourWarnRemoved: '{"data":"&cИгрок ${OWN} простил вам измену царству! Вы прощены, благодарите его."}'
+  userNotHaveWarns: '{"data":"&cУ игрока ${TARGET} нет предупреждений, он чист."}'
+permissions:
+  warn_use: '{"data":"simplewarns.warn_command"}'
+  unwarn_use: '{"data":"simplewarns.unwarn_command"}'
+settings:
+  mysql_enable: false
+  sql:
+    table: 'players_storage'
+    user: 'root'
+    password: 'admin'
+    host: 'localhost'
+    database: 'vedro_db'
+    port: '3306'
+  warn_limit: '{"data":"3"}'
+  ban_time: '{"data":"666y"}'

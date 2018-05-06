@@ -1,0 +1,4 @@
+name: SimpleWarns
+version: 1.0-SNAPSHOT
+main: sexy.criss.simplewars.Main
+authors: [d3ever]
